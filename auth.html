@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+</html>
+
+</head>
+<meta charset="UTF-8">
+<title>Страница автоизации</title>
+</head>
+<style>
+    :root{
+        --primary-color: rgba(236, 203, 112, 0.966);
+        --secondary-color: #ff9df7; 
+    }
+
+    body{
+        background: var(--primary-color);
+    }
+</style>
+<body>
+    <h1 id="your-id-name">Авторизируйтесь, а то будет 2</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Пароль">
+
+    <br><br>
+    <div>
+        <input type="button" onclick="changeTheme('light')" value="Тема 1">
+        <input type="button" onclick="changeTheme('dark')" value="Тема 2">
+    </div>
+    <label Password:></label>
+        <input type="password" id="password" placeholder="Пароль">
+
+        <br><br>
+        <input type="button" value="Войти" onclick="login()">
+
+</body>
+<script>
+    function changeTheme(themeName) {
+//Объявление пременных, которы будут хранить значение цвета
+var primarycolor;
+var secondarycolor;
+
+// В зависимости от значения themeName - устанавливаем следующие цвета
+if (themeName =='root') {
+primaryColor = "white";
+secondayColor = "gray";
+}
+
+if (themeName =='dark') {
+primaryColor = "#303030";
+secondarycolor = "#eee";
+}
+
+// Изменение значения цвета в :root
+document.documentElement.style.setProperty("--primary-color", primaryColor);
+document.documentElement.style.setProperty("--secondary-color", primaru-color);
+}
+
+    alert('Первое сообщение');
+</script>
+<script>
+    function login() {
+elem = document.getElementById('username');
+elem.style.background = 'red';
+username = elem.value;
+if (username == "oleshaaa") {
+    alert("нажмите ок чтоб перейти");
+    window.open("file:///C:/Users/user/Desktop/Untitled-1.html","_self");
+
+} else {
+alert("ты не oleshaaa");
+}
+
+}
+</script>
+
+
+</html>
